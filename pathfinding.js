@@ -168,7 +168,7 @@ function drawPath(path) {
 }
 
 function saveCanvasAsImage() {
-    // Save the canvas content as an image (PNG format)
+    // Save the canvas content as an image PNG format
     const out = fs.createWriteStream(__dirname + '/maze_with_path.png');
     const stream = canvas.createPNGStream();
     stream.pipe(out);
